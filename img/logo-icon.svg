@@ -1,0 +1,11 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Basket -->
+  <path d="M25 45H75L71.25 78.4375C70.625 83.9844 65.9375 88.125 60.3125 88.125H39.6875C34.0625 88.125 29.375 83.9844 28.75 78.4375L25 45Z" fill="#ff4d8d"/>
+  
+  <!-- Handle -->
+  <path d="M35 45V35C35 26.7157 41.7157 20 50 20C58.2843 20 65 26.7157 65 35V45" stroke="#ffd60a" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Leaf -->
+  <path d="M50 45C50 45 62 45 62 57C62 69 50 69 50 69C50 69 38 69 38 57C38 45 50 45 50 45Z" fill="#ffd60a"/>
+  <path d="M50 45L50 69" stroke="#ff4d8d" stroke-width="2" stroke-linecap="round"/>
+</svg>

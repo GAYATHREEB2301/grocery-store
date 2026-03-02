@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home 2 | Nest Grocery Stores - Minimal & Clean</title>
+    <!-- Google Fonts -->
+    <link <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&family=Quicksand:wght@600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/logo-icon.svg">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="img/logo-icon.svg" alt="Nest Logo">
+                </div>
+                Nest<span>Grocery</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"
+                                style="font-size: 0.7rem;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html" class="dropdown-link">Home 1</a></li>
+                            <li><a href="home2.html" class="dropdown-link active">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="offers.html" class="nav-link">Offers</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="wishlist.html" class="icon-btn" title="Wishlist"><i class="far fa-heart"></i></a>
+                <a href="cart.html" class="icon-btn" title="Cart"><i class="fas fa-shopping-basket"></i></a>
+
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-switch">
+                        <input type="checkbox" id="theme-switch">
+                        <div class="slider">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </label>
+                </div>
+
+                <a href="login.html" class="btn btn-pink btn-sm" style="margin-left: 10px;">Login</a>
+
+                <i class="fas fa-bars mobile-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Home 2 -->
+    <section class="hero-2">
+        <div class="container">
+            <div class="hero-2-grid">
+                <div class="hero-image">
+                    <img src="https://images.pexels.com/photos/17546504/pexels-photo-17546504.jpeg"
+                        alt="Groceries Display">
+                </div>
+                <div class="hero-2-text">
+                    <h1 class="hero-title">Experience <span>Pure</span> Organic Quality</h1>
+                    <p class="hero-desc" style="max-width: 500px;">Direct from nature to your kitchen table. Discover
+                        our minimalist grocery approach today and join thousands of satisfied customers.</p>
+                    <div style="display: flex; gap: 20px; align-items: center; margin-top: 30px;">
+                        <a href="categories.html" class="btn btn-pink">Explore Categories</a>
+                        <a href="shop.html" style="font-weight: 700; color: var(--text-color);">Shop All Products <i
+                                class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotion Section -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div
+                    style="background-color: var(--promo-orange-bg); border-radius: var(--radius); padding: 50px; position: relative; overflow: hidden;">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: var(--text-color);">Weekly Promotion</h3>
+                    <p style="color: var(--promo-orange-text); font-weight: 600; margin-bottom: 20px;">Up to 50% Off on
+                        Fruits</p>
+                    <a href="offers.html" class="btn btn-outline"
+                        style="border-color: var(--promo-orange-text); color: var(--promo-orange-text);">Shop
+                        Now</a>
+                    <i class="fas fa-lemon"
+                        style="position: absolute; right: -20px; bottom: -20px; font-size: 10rem; opacity: 0.1; transform: rotate(-15deg); color: var(--promo-orange-text);"></i>
+                </div>
+                <div
+                    style="background-color: var(--promo-blue-bg); border-radius: var(--radius); padding: 50px; position: relative; overflow: hidden;">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: var(--text-color);">Limited Time Deal</h3>
+                    <p style="color: var(--promo-blue-text); font-weight: 600; margin-bottom: 20px;">Buy 1 Get 1 on
+                        Beverages</p>
+                    <a href="offers.html" class="btn btn-outline"
+                        style="border-color: var(--promo-blue-text); color: var(--promo-blue-text);">See
+                        Details</a>
+                    <i class="fas fa-wine-glass"
+                        style="position: absolute; right: -20px; bottom: -20px; font-size: 10rem; opacity: 0.1; transform: rotate(15deg); color: var(--promo-blue-text);"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Specific to Home 2: Category Focus Grid -->
+    <section class="section" style="background-color: var(--bg-soft);">
+        <div class="container">
+            <h2 class="section-title">Trending <span>Categories</span></h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div class="blog-card" style="text-align: center;">
+                    <div class="blog-image" style="height: 250px;">
+                        <img src="https://images.pexels.com/photos/2294412/pexels-photo-2294412.jpeg" alt="Fruits">
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="margin-bottom: 10px;">Fresh Fruits</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Collected daily
+                            from local gardens for your health.</p>
+                        <a href="categories.html" class="btn btn-yellow" style="padding: 8px 20px;">Browse</a>
+                    </div>
+                </div>
+                <div class="blog-card" style="text-align: center;">
+                    <div class="blog-image" style="height: 250px;">
+                        <img src="https://media.istockphoto.com/id/1036930406/photo/refrigerator-with-various-products-3d-illustration.jpg?s=1024x1024&w=is&k=20&c=KbdeRF8RL8YmjfkLtyvm7DKb4kBebILBCmlWTn-aQ0Q="
+                            alt="Dairy">
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="margin-bottom: 10px;">Pure Dairy</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">100% natural milk
+                            products without additives.</p>
+                        <a href="categories.html" class="btn btn-yellow" style="padding: 8px 20px;">Browse</a>
+                    </div>
+                </div>
+                <div class="blog-card" style="text-align: center;">
+                    <div class="blog-image" style="height: 250px;">
+                        <img src="https://images.pexels.com/photos/27857668/pexels-photo-27857668.jpeg"
+                            alt="Vegetables">
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="margin-bottom: 10px;">Organic Veg</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">The biggest
+                            collection of herbicide-free vegetables.</p>
+                        <a href="categories.html" class="btn btn-yellow" style="padding: 8px 20px;">Browse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">New <span>Arrivals</span></h2>
+            <div class="products-grid">
+                <!-- Product placeholders -->
+                <div class="product-card">
+                    <div class="product-image"><img
+                            src="https://images.pexels.com/photos/31614260/pexels-photo-31614260.jpeg" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Beverages</span>
+                        <h3 class="product-name">Natural Orange Juice</h3>
+                        <div class="product-price-row">
+                            <span class="product-price">$5.99</span>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for layout -->
+                <div class="product-card">
+                    <div class="product-image"><img
+                            src="https://images.pexels.com/photos/31661560/pexels-photo-31661560.jpeg" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Snacks</span>
+                        <h3 class="product-name">Whole Grain Bread</h3>
+                        <div class="product-price-row">
+                            <span class="product-price">$3.50</span>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img
+                            src="https://images.pexels.com/photos/8805102/pexels-photo-8805102.jpeg" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Dairy</span>
+                        <h3 class="product-name">Natural Greek Yogurt</h3>
+                        <div class="product-price-row">
+                            <span class="product-price">$6.45</span>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"><img
+                            src="https://images.pexels.com/photos/13918360/pexels-photo-13918360.jpeg" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Vegetables</span>
+                        <h3 class="product-name">Mixed Bell Peppers</h3>
+                        <div class="product-price-row">
+                            <span class="product-price">$4.20</span>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                    <div class="logo-icon">
+                        <img src="https://images.pexels.com/photos/2449665/pexels-photo-2449665.jpeg">
+                    </div>
+                    Nest<span>Grocery</span>
+                </a>
+                <p>Nest Grocery Stores provides fresh, organic, and artisanal grocery products directly from local
+                    farmers to your home.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Newsletter</h4>
+                <p style="font-size: 0.9rem; color: #bbbbbb; margin-bottom: 20px;">Subscribe to get updates on new
+                    products and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn btn-pink">Join</button>
+                </form>
+                <div class="footer-contact-info"
+                    style="margin-top: 30px; display: flex; align-items: center; gap: 15px;">
+                    <div class="phone-icon" style="color: var(--primary-pink); font-size: 1.5rem;">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.8rem; color: #888888; margin-bottom: 2px;">Call Us 24/7</p>
+                        <h4 style="font-family: 'Quicksand', sans-serif; color: #ffffff;">+1 (234) 567-890</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 Nest Grocery Stores. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

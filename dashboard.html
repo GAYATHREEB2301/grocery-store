@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Nest Grocery Stores - My Account</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&family=Quicksand:wght@600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/logo-icon.svg">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="img/logo-icon.svg" alt="Nest Logo">
+                </div>
+                Nest<span>Grocery</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li class="dropdown"><a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"
+                                style="font-size: 0.7rem;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html" class="dropdown-link">Home 1</a></li>
+                            <li><a href="home2.html" class="dropdown-link">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="offers.html" class="nav-link">Offers</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="wishlist.html" class="icon-btn" title="Wishlist"><i class="far fa-heart"></i></a>
+                <a href="cart.html" class="icon-btn" title="Cart"><i class="fas fa-shopping-basket"></i></a>
+
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-switch">
+                        <input type="checkbox" id="theme-switch">
+                        <div class="slider">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </label>
+                </div>
+
+                <a href="login.html" class="btn btn-pink btn-sm" style="margin-left: 10px;">Login</a>
+
+                <i class="fas fa-bars mobile-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Header -->
+    <section class="section" style="background-color: var(--bg-soft); padding: 40px 0;">
+        <div class="container">
+            <h1 style="font-size: 2rem; font-family: 'Quicksand', sans-serif;">User <span>Dashboard</span></h1>
+            <p style="color: var(--text-muted); margin-top: 5px;">Welcome back, <strong>John Doe</strong>!</p>
+        </div>
+    </section>
+
+    <!-- Dashboard Content Wrapper -->
+    <section class="section">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <aside class="dashboard-sidebar">
+                    <div class="user-info">
+                        <div class="user-avatar">JD</div>
+                        <h3 style="margin-bottom: 5px;">John Doe</h3>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">john.doe@example.com</p>
+                    </div>
+                    <ul class="dashboard-nav">
+                        <li><a href="#" class="dashboard-nav-link active" data-target="profile"><i
+                                    class="fas fa-user-circle"></i> User Profile</a></li>
+                        <li><a href="#" class="dashboard-nav-link" data-target="orders"><i class="fas fa-box"></i> Order
+                                History</a></li>
+                        <li><a href="#" class="dashboard-nav-link" data-target="addresses"><i
+                                    class="fas fa-map-marker-alt"></i> Saved Addresses</a></li>
+                        <li><a href="#" class="dashboard-nav-link" data-target="wishlist"><i class="fas fa-heart"></i>
+                                My Wishlist</a></li>
+                        <li style="margin-top: 30px; border-top: 1px solid var(--border-color); padding-top: 20px;"><a
+                                href="index.html" class="dashboard-nav-link" style="color: #ff3d00;"><i
+                                    class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main Section -->
+                <main class="dashboard-content" id="dashboard-main">
+
+                    <!-- Stats Section (Default Profile Content) -->
+                    <div class="dash-stats">
+                        <div class="stat-card">
+                            <h4>Total Orders</h4><span>12</span>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Active Cart</h4><span>$0.00</span>
+                        </div>
+                        <div class="stat-card">
+                            <h4>My Points</h4><span>450</span>
+                        </div>
+                    </div>
+
+                    <h3
+                        style="margin-bottom: 30px; border-bottom: 2px solid var(--primary-pink); display: inline-block;">
+                        Recent Order History</h3>
+                    <div style="overflow-x: auto;">
+                        <table class="orders-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Invoice</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#NEST-9821</td>
+                                    <td>Mar 01, 2026</td>
+                                    <td>$45.90</td>
+                                    <td><span class="status delivered">Delivered</span></td>
+                                    <td><i class="fas fa-download"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>#NEST-7634</td>
+                                    <td>Feb 15, 2026</td>
+                                    <td>$112.50</td>
+                                    <td><span class="status delivered">Delivered</span></td>
+                                    <td><i class="fas fa-download"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>#NEST-5412</td>
+                                    <td>Jan 28, 2026</td>
+                                    <td>$24.15</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td><i class="fas fa-download"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>#NEST-3301</td>
+                                    <td>Jan 12, 2026</td>
+                                    <td>$67.80</td>
+                                    <td><span class="status delivered">Delivered</span></td>
+                                    <td><i class="fas fa-download"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3
+                        style="margin-top: 50px; margin-bottom: 30px; border-bottom: 2px solid var(--primary-pink); display: inline-block;">
+                        Saved Addresses</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div
+                            style="padding: 25px; background-color: var(--bg-soft); border-radius: var(--radius); position: relative;">
+                            <span
+                                style="position: absolute; top: 15px; right: 20px; color: var(--primary-pink); font-size: 0.8rem; font-weight: 700;">DEFAULT</span>
+                            <h4 style="margin-bottom: 10px;">Home Address</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">123 Organic Lane, Freshville, <br>NY
+                                10001, United States <br><br><strong>Phone:</strong> +1 (234) 567-890</p>
+                            <div style="margin-top: 20px; display: flex; gap: 15px;"><a href="#"
+                                    style="font-size: 0.85rem; color: var(--primary-pink); font-weight: 600;">Edit
+                                    Address</a></div>
+                        </div>
+                        <div
+                            style="padding: 25px; background-color: var(--bg-soft); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; border: 2px dashed var(--border-color); cursor: pointer;">
+                            <div style="text-align: center;"><i class="fas fa-plus-circle"
+                                    style="font-size: 1.5rem; color: var(--text-muted); margin-bottom: 10px;"></i>
+                                <p style="font-size: 0.9rem; font-weight: 600;">Add New Address</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                    <div class="logo-icon">
+                        <img src="img/logo-icon.svg" alt="Nest Logo" style="height: 35px;">
+                    </div>
+                    Nest<span>Grocery</span>
+                </a>
+                <p>Nest Grocery Stores provides fresh, organic, and artisanal grocery products directly from local
+                    farmers to your home.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Newsletter</h4>
+                <p style="font-size: 0.9rem; color: #bbbbbb; margin-bottom: 20px;">Subscribe to get updates on new
+                    products and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn btn-pink">Join</button>
+                </form>
+                <div class="footer-contact-info"
+                    style="margin-top: 30px; display: flex; align-items: center; gap: 15px;">
+                    <div class="phone-icon" style="color: var(--primary-pink); font-size: 1.5rem;">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.8rem; color: #888888; margin-bottom: 2px;">Call Us 24/7</p>
+                        <h4 style="font-family: 'Quicksand', sans-serif; color: #ffffff;">+1 (234) 567-890</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 Nest Grocery Stores. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

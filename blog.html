@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nest Grocery Stores - Healthy Tips & Recipes</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&family=Quicksand:wght@600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/logo-icon.svg">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="img/logo-icon.svg" alt="Nest Logo">
+                </div>
+                Nest<span>Grocery</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"
+                                style="font-size: 0.7rem;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html" class="dropdown-link">Home 1</a></li>
+                            <li><a href="home2.html" class="dropdown-link">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="offers.html" class="nav-link">Offers</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="wishlist.html" class="icon-btn" title="Wishlist"><i class="far fa-heart"></i></a>
+                <a href="cart.html" class="icon-btn" title="Cart"><i class="fas fa-shopping-basket"></i></a>
+
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-switch">
+                        <input type="checkbox" id="theme-switch">
+                        <div class="slider">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </label>
+                </div>
+
+                <a href="login.html" class="btn btn-pink btn-sm" style="margin-left: 10px;">Login</a>
+
+                <i class="fas fa-bars mobile-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="background-color: var(--bg-soft); padding: 60px 0;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; text-align: center;">Nest <span>Blog</span></h1>
+            <p style="color: var(--text-muted); text-align: center; max-width: 600px; margin: 10px auto 0;">Healthy
+                eating tips, delicious recipes, and grocery guides curated just for you.</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Blog 1: Healthy Eating -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=800"
+                            alt="Healthy Eating">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 10, 2026</span>
+                        <h2 class="blog-title">10 Benefits of Eating Organic Groceries Daily</h2>
+                        <p class="blog-desc">Discover how switching to organic produce can transform your health, energy
+                            levels, and long-term well-being starting today.</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 20px;">Read More</a>
+                    </div>
+                </article>
+                <!-- Blog 2: Recipe -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800"
+                            alt="Recipe">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 08, 2026</span>
+                        <h2 class="blog-title">Quick & Easy Mediterranean Salad Recipe</h2>
+                        <p class="blog-desc">The perfect fresh salad using seasonal ingredients from Nest Grocery.
+                            Refreshing, healthy, and ready in under 15 minutes.</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 20px;">Read More</a>
+                    </div>
+                </article>
+                <!-- Blog 3: Tips -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800"
+                            alt="Grocery Tips">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 05, 2026</span>
+                        <h2 class="blog-title">How to Keep Your Produce Fresh for Longer</h2>
+                        <p class="blog-desc">Practical tips and storage techniques to extend the lifespan of your fruits
+                            and vegetables, reducing waste and saving money.</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 20px;">Read More</a>
+                    </div>
+                </article>
+                <!-- Blog 4: Bakery -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/6608542/pexels-photo-6608542.jpeg" alt="Bakery">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 01, 2026</span>
+                        <h2 class="blog-title">Secret to the Perfect Whole Wheat Sourdough</h2>
+                        <p class="blog-desc">Exploring the artisanal process behind our best-selling bakery bread and
+                            why ancient grains are better for your digestion.</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 20px;">Read More</a>
+                    </div>
+                </article>
+                <!-- Blog 5: Sustainability -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/7512880/pexels-photo-7512880.jpeg"
+                            alt="Sustainability">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Feb 28, 2026</span>
+                        <h2 class="blog-title">Simple Steps to a Zero-Waste Kitchen</h2>
+                        <p class="blog-desc">How to use reusable bags, bulk-buying strategies, and eco-friendly cleaning
+                            to transform your grocery habits into a green lifestyle.</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 20px;">Read More</a>
+                    </div>
+                </article>
+                <!-- Blog 6: Seasonal -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&q=80&w=800"
+                            alt="Seasonal">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Feb 25, 2026</span>
+                        <h2 class="blog-title">Spring Harvest: What's in Season This Month?</h2>
+                        <p class="blog-desc">A deep dive into the freshest fruits and vegetables available this spring
+                            and the best ways to incorporate them into your meals.</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 20px;">Read More</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Removed Pagination -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                    <div class="logo-icon">
+                        <img src="img/logo-icon.svg" alt="Nest Logo" style="height: 35px;">
+                    </div>
+                    Nest<span>Grocery</span>
+                </a>
+                <p>Nest Grocery Stores provides fresh, organic, and artisanal grocery products directly from local
+                    farmers to your home.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Newsletter</h4>
+                <p style="font-size: 0.9rem; color: #bbbbbb; margin-bottom: 20px;">Subscribe to get updates on new
+                    products and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn btn-pink">Join</button>
+                </form>
+                <div class="footer-contact-info"
+                    style="margin-top: 30px; display: flex; align-items: center; gap: 15px;">
+                    <div class="phone-icon" style="color: var(--primary-pink); font-size: 1.5rem;">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.8rem; color: #888888; margin-bottom: 2px;">Call Us 24/7</p>
+                        <h4 style="font-family: 'Quicksand', sans-serif; color: #ffffff;">+1 (234) 567-890</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 Nest Grocery Stores. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

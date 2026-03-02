@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home 1 | Nest Grocery Stores - Fresh & Organic</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&family=Quicksand:wght@600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/logo-icon.svg">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="img/logo-icon.svg" alt="Nest Logo">
+                </div>
+                Nest<span>Grocery</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="index.html" class="nav-link active">Home <i class="fas fa-chevron-down"
+                                style="font-size: 0.7rem;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html" class="dropdown-link">Home 1</a></li>
+                            <li><a href="home2.html" class="dropdown-link">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li><a href="offers.html" class="nav-link">Offers</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="wishlist.html" class="icon-btn" title="Wishlist"><i class="far fa-heart"></i></a>
+                <a href="cart.html" class="icon-btn" title="Cart"><i class="fas fa-shopping-basket"></i></a>
+
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-switch">
+                        <input type="checkbox" id="theme-switch">
+                        <div class="slider">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </label>
+                </div>
+
+                <a href="login.html" class="btn btn-pink btn-sm" style="margin-left: 10px;">Login</a>
+
+                <i class="fas fa-bars mobile-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-1">
+        <div class="container" style="display: flex; align-items: center; gap: 40px;">
+            <div class="hero-content">
+                <span class="hero-tag">Organic & Healthy</span>
+                <h1 class="hero-title">Fresh Groceries <br><span>Delivered</span> to Your Door</h1>
+                <p class="hero-desc">Experience the finest quality organic products sourced directly from local farms.
+                    Save up to 30% on your first order!</p>
+                <div class="hero-btns" style="display: flex; gap: 15px;">
+                    <a href="shop.html" class="btn btn-pink">Shop Now</a>
+                    <a href="offers.html" class="btn btn-yellow">View Offers</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800"
+                    alt="Fresh Groceries">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" style="background-color: var(--bg-soft);">
+        <div class="container"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <i class="fas fa-truck-fast" style="font-size: 2.5rem; color: var(--primary-pink);"></i>
+                <div>
+                    <h4 style="font-weight: 700;">Free Shipping</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">On orders over $50</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <i class="fas fa-rotate-left" style="font-size: 2.5rem; color: var(--primary-pink);"></i>
+                <div>
+                    <h4 style="font-weight: 700;">Easy Returns</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">30-day money back</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <i class="fas fa-shield-halved" style="font-size: 2.5rem; color: var(--primary-pink);"></i>
+                <div>
+                    <h4 style="font-weight: 700;">Secure Payment</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">100% secure payment</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <i class="fas fa-headphones" style="font-size: 2.5rem; color: var(--primary-pink);"></i>
+                <div>
+                    <h4 style="font-weight: 700;">24/7 Support</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Dedicated assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Preview -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Shop by <span>Categories</span></h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <span class="category-icon">🍎</span>
+                    <h3>Fruits & Veg</h3>
+                </div>
+                <div class="category-card">
+                    <span class="category-icon">🥛</span>
+                    <h3>Dairy Products</h3>
+                </div>
+                <div class="category-card">
+                    <span class="category-icon">🍪</span>
+                    <h3>Snacks</h3>
+                </div>
+                <div class="category-card">
+                    <span class="category-icon">🥤</span>
+                    <h3>Beverages</h3>
+                </div>
+                <div class="category-card">
+                    <span class="category-icon">🧺</span>
+                    <h3>Household</h3>
+                </div>
+                <div class="category-card">
+                    <span class="category-icon">🍖</span>
+                    <h3>Meat & Eggs</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section" style="background-color: var(--bg-soft);">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Products</span></h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/2487443/pexels-photo-2487443.jpeg" alt="Apple">
+                        <span class="product-badge">Hot</span>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Fruits</span>
+                        <h3 class="product-name">Fresh Red Apples</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> (4.5)
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$4.99 <span class="old-price">$6.50</span></span>
+                            <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/7451957/pexels-photo-7451957.jpeg" alt="Milk">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Dairy</span>
+                        <h3 class="product-name">Organic Whole Milk</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i> (5.0)
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$3.50</span>
+                            <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://media.istockphoto.com/id/1638862520/photo/healthy-food-bags.jpg?s=1024x1024&w=is&k=20&c=YYfHhGJa-NW7PVGB6Ot5izWfLXgIK_Os9dv511EbKRk="
+                            alt="Snack">
+                        <span class="product-badge">New</span>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Snacks</span>
+                        <h3 class="product-name">Natural Nut Mix</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i> (4.0)
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$12.00 <span class="old-price">$15.00</span></span>
+                            <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/3090274/pexels-photo-3090274.jpeg" alt="Beverage">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Beverages</span>
+                        <h3 class="product-name">Iced Green Tea</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i> (5.0)
+                        </div>
+                        <div class="product-price-row">
+                            <span class="product-price">$2.99</span>
+                            <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                    <div class="logo-icon">
+                        <img src="img/logo-icon.svg" alt="Nest Logo" style="height: 35px;">
+                    </div>
+                    Nest<span>Grocery</span>
+                </a>
+                <p>Nest Grocery Stores provides fresh, organic, and artisanal grocery products directly from local
+                    farmers to your home.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Newsletter</h4>
+                <p style="font-size: 0.9rem; color: #bbbbbb; margin-bottom: 20px;">Subscribe to get updates on new
+                    products and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn btn-pink">Join</button>
+                </form>
+                <div class="footer-contact-info"
+                    style="margin-top: 30px; display: flex; align-items: center; gap: 15px;">
+                    <div class="phone-icon" style="color: var(--primary-pink); font-size: 1.5rem;">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.8rem; color: #888888; margin-bottom: 2px;">Call Us 24/7</p>
+                        <h4 style="font-family: 'Quicksand', sans-serif; color: #ffffff;">+1 (234) 567-890</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2026 Nest Grocery Stores. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
