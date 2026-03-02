@@ -67,13 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Close when clicking a nav link (for same-page or SPA navigation)
         navLinks.querySelectorAll('.nav-link, .dropdown-link, .mobile-auth-links a').forEach(link => {
             link.addEventListener('click', () => {
-                if (window.innerWidth <= 768) closeMenu();
+                if (window.innerWidth <= 1024) closeMenu();
             });
         });
 
         // Reset on resize to desktop
         window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) {
+            if (window.innerWidth > 1024) {
                 closeMenu();
             }
         });

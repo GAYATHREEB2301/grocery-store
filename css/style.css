@@ -1235,14 +1235,6 @@ footer {
         gap: 30px;
     }
 
-    .nav-links {
-        gap: 18px;
-    }
-
-    .nav-link {
-        font-size: 0.88rem;
-    }
-
     /* Shop controls wrap on tablet */
     .shop-controls {
         flex-wrap: wrap;
@@ -1258,24 +1250,12 @@ footer {
     .blog-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-}
 
-/* --- Tablet only (769px – 1024px): centre hero-2 buttons --- */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .hero-2-btns {
-        justify-content: center;
-    }
-}
-
-/* --- ≤ 768px : Tablet Portrait --- */
-@media (max-width: 768px) {
-
-    /* ---- HEADER / NAV ---- */
+    /* ---- HEADER / NAV: switch to hamburger drawer at tablet ---- */
     .mobile-toggle {
         display: block;
     }
 
-    /* Hide desktop login button in header */
     .desktop-only-login {
         display: none;
     }
@@ -1338,10 +1318,8 @@ footer {
         justify-content: center;
         cursor: pointer;
         pointer-events: none;
-        /* close via JS overlay */
     }
 
-    /* Individual nav items */
     .nav-links>li {
         width: 100%;
         border-bottom: 1px solid var(--border-color);
@@ -1366,7 +1344,6 @@ footer {
         background: rgba(255, 77, 141, 0.06);
     }
 
-    /* Dropdown inside drawer */
     .dropdown-menu {
         position: static;
         opacity: 1;
@@ -1390,7 +1367,6 @@ footer {
         font-size: 0.9rem;
     }
 
-    /* Mobile auth links inside drawer */
     .mobile-auth-links {
         display: flex;
         flex-direction: column;
@@ -1425,6 +1401,17 @@ footer {
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(255, 77, 141, 0.25);
     }
+}
+
+/* --- Tablet only (769px – 1024px): centre hero-2 buttons --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-2-btns {
+        justify-content: center;
+    }
+}
+
+/* --- ≤ 768px : Mobile Portrait --- */
+@media (max-width: 768px) {
 
     /* ---- HERO ---- */
     .hero-1 {
