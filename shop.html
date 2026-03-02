@@ -46,6 +46,11 @@
                     <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                     <li><a href="about.html" class="nav-link">About Us</a></li>
                     <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    <!-- Mobile Auth Links (visible only in hamburger drawer) -->
+                    <li class="mobile-auth-links">
+                        <a href="login.html" class="mobile-login">Login</a>
+                        <a href="signup.html" class="mobile-signup">Sign Up</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -63,20 +68,18 @@
                     </label>
                 </div>
 
-                <a href="login.html" class="btn btn-pink btn-sm" style="margin-left: 10px;">Login</a>
+                <a href="login.html" class="btn btn-pink btn-sm desktop-only-login" style="margin-left: 10px;">Login</a>
 
                 <i class="fas fa-bars mobile-toggle"></i>
             </div>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="section"
-        style="background: linear-gradient(135deg, rgba(255, 77, 141, 0.05), rgba(255, 214, 10, 0.05)); padding: 60px 0;">
-        <div class="container" style="text-align: center;">
-            <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Our <span>Shop</span></h1>
-            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Explore our complete range of premium
-                groceries and organic products.</p>
+    <!-- Page Hero -->
+    <section class="page-hero page-hero--shop">
+        <div class="container">
+            <h1>Our <span>Shop</span></h1>
+            <p>Explore our complete range of premium groceries and organic products.</p>
         </div>
     </section>
 

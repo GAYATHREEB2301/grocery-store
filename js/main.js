@@ -24,15 +24,58 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Mobile Menu Toggle logic
+    // Mobile Hamburger Menu — Drawer with Overlay
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
 
+    // Inject overlay div if not already present
+    let menuOverlay = document.querySelector('.menu-overlay');
+    if (!menuOverlay) {
+        menuOverlay = document.createElement('div');
+        menuOverlay.className = 'menu-overlay';
+        document.body.appendChild(menuOverlay);
+    }
+
+    function openMenu() {
+        navLinks.classList.add('active');
+        menuOverlay.classList.add('active');
+        mobileToggle.classList.remove('fa-bars');
+        mobileToggle.classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        navLinks.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        mobileToggle.classList.add('fa-bars');
+        mobileToggle.classList.remove('fa-times');
+        document.body.style.overflow = '';
+    }
+
     if (mobileToggle && navLinks) {
         mobileToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileToggle.classList.toggle('fa-bars');
-            mobileToggle.classList.toggle('fa-times');
+            if (navLinks.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        // Close when clicking overlay
+        menuOverlay.addEventListener('click', closeMenu);
+
+        // Close when clicking a nav link (for same-page or SPA navigation)
+        navLinks.querySelectorAll('.nav-link, .dropdown-link, .mobile-auth-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) closeMenu();
+            });
+        });
+
+        // Reset on resize to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
         });
     }
 
